@@ -1,0 +1,8 @@
+body {
+    background-color: blueviolet;
+}
+#main {
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
