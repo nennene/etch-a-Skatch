@@ -20,7 +20,11 @@ const choiceButtonElement = document.getElementById("btn");
 
 choiceButtonElement.addEventListener("click",() => {
     const promptResult = prompt("Choose grid size (max 100)");
-    generateGrid(parseInt(promptResult));
+    if (promptResult && promptResult > 0 && promptResult <= 100) {
+      buildGrid(promptResult);
+  } else {
+      alert("Please enter a valid number between 1 and 100.");
+  }
 })
 
 
